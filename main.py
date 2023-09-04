@@ -112,10 +112,66 @@ else:
       print("Python ROCKS!")
 '''
 print("----ACCUMULATOR PATTERN---------")
+num = 6
+total = 0
 
+for integer in range(1, num+1):
+   total += integer
+
+print(total)
+
+# use num+1 to include the last index in the range
+print("-------------")
+# The accumulator pattern can also decrease a running total!
+total = 1000
+decrease_by = 25
+
+for step in range(10):
+   total -= decrease_by
+
+print(total)
+print("-------------")
+
+total = 0
+for step in range(5):
+	total += 2
+print(total)
+
+print("------ FOR LOOP TO WHILE LOOP-------")
+for num in range(21):
+   print(num)
+
+num = 0
+while num < 21:
+   print(num)
+   num += 1
+
+print("-----PRACTICE CONVERT FOR TO WHILE--------")
+
+letters = 'abcdefghijklmnopqrstuvwxyz'
+for_string = ''
+num_letters = 8
+
+for index in range(num_letters):
+   for_string += letters[index]
+
+print(for_string)  # Displays 'abcdefgh'
+
+# Follow the instructions in the text to rewrite a for loop a while loop.
+letters = 'abcdefghijklmnopqrstuvwxyz'
+while_string = ''
+num_letters = 8
+index = 0
+
+while index < num_letters:
+	while_string += letters[index]
+	index += 1
+	
+print(while_string)
 
 print("-------------")
 print("-------------")
 print("-------------")
 print("-------------")
 print("-------------")
+
