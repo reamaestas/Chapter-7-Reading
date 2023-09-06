@@ -169,9 +169,64 @@ while index < num_letters:
 	
 print(while_string)
 
-print("-------------")
-print("-------------")
-print("-------------")
-print("-------------")
+print("------INPUT VALIDATION-------")
+
+num_choice = 0
+
+while num_choice <= 0:
+    num_choice = int(input('Choose a positive number: '))
+    if num_choice <= 0:
+      print('Invalid number')
+
+#different than definite iteration
+
+print("\n----for loop PROS AND CONS---------")
+'''
+Easier to set up than while loops.
+
+Must have a definite start and end point, and these must be declared in the for statement.
+
+Can loop through strings and collections without using an index value (e.g. for char in 'hello':).
+
+Automatically updates the loop variable.
+
+It is hard to accidentally create an infinite Python for loop.
+
+Can be used in place of some while loops, but not all.
+
+Do not work for input validation.
+'''
+print("\n----while loop PROS AND CONS---------")
+'''
+More flexible than for loops.
+
+ANY for loop can be re-written as a while loop.
+
+Do not need to know beforehand how many times the loop needs to run.
+
+Can be used for input validation.
+
+while loops require more work to build.
+
+Making an infinite while loop is easy.
+
+'''
+print("-----ending loop with BREAK--------")
+for iteration in range(42):
+   print('This is iteration number:', iteration+1)
+
+   if iteration > 4:
+      break
+
+print("The loop is done!")
+'''
+Line 2 repeats 6 times with values of iteration from 0 to 5.
+
+The sixth time through the loop, iteration is 5 and the condition in line 4 (iteration > 4) evaluates to True for the first time.
+
+As a result, the program flow reaches the break statement. The loop immediately stops, even though range(42) would normally keep the loop going.
+
+Control moves to the first line of code after the loop.
+'''
 print("-------------")
 
